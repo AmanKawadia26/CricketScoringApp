@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCOREBUZZ</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(79, 77, 77); 
+    transition: background-color 1.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: 4rem; 
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+  }
+
+  .pop {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%; 
+    display: inline-block;
+    animation: pop 2s cubic-bezier(0.4, -0.5, 0.2, 1.5) infinite;
+  }
+
+  @keyframes pop {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(-40px) scaleY(0.8);
+    }
+    40%, 60% {
+      transform: translateY(0) scaleY(1.1);
+    }
+    80% {
+      transform: translateY(-30px) scaleY(0.9);
+    }
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.backgroundColor = "rgb(79, 77, 77)"; 
+  });
+</script>
+</head>
+<body>
+  <h1>
+    S
+    C
+    <span class="pop"></span>
+    R
+    E
+    B
+    U
+    Z
+    Z
+  </h1>
+</body>
+</html>
